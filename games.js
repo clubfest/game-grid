@@ -1,4 +1,5 @@
 if (Meteor.isClient) {
+  var isMyTurn;
   Template.hello.created = function () {
     isMyTurn = true;
   };
@@ -10,11 +11,7 @@ if (Meteor.isClient) {
       } else {
         evt.currentTarget.textContent = 'O';
       }
-      if (isMyTurn){
-        isMyTurn = false;
-      } else {
-        isMyTurn = true;
-      }
+      isMyTurn = !isMyTurn;
     }
   });
 }
