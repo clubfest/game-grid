@@ -1,9 +1,9 @@
   var isMyTurn;
-  Template.hello.created = function () {
+  Template.gameGrid.created = function () {
     isMyTurn = true;
   };
 
-  Template.hello.events({
+  Template.gameGrid.events({
     'click .game-grid td' : function (evt) {
       if (isMyTurn){
         evt.currentTarget.style.background = '#A66';
