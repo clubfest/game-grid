@@ -1,6 +1,24 @@
 /* CSS declarations go here */
 .game-grid tr td {
+  cursor: pointer;
   width: 20px;
   height: 20px;
-  background: #CDE;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-radius: 10%;
+}
+
+.game-grid tr{
+  border-style: solid;
+}
+
+[my-box=true] {
+  background: #6A6;
+}
+
+[my-box=false] {
+  background: #66A;
 }
