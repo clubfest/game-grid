@@ -1,1 +1,6 @@
 /* CSS declarations go here */
+.game-grid tr td {
+  width: 20px;
+  height: 20px;
+  background: #CDE;
+}

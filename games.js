@@ -5,11 +5,11 @@ if (Meteor.isClient) {
   };
 
   Template.hello.events({
-    'click button' : function (evt) {
+    'click td' : function (evt) {
       if (isMyTurn){
-        evt.currentTarget.textContent = 'X';
+        evt.currentTarget.style.background = '#A66';
       } else {
-        evt.currentTarget.textContent = 'O';
+        evt.currentTarget.style.background = '#66A';
       }
       isMyTurn = !isMyTurn;
     }
